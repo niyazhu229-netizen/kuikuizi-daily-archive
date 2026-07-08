@@ -31,21 +31,21 @@ export default function RootLayout({
 
   <nav className="bg-white px-8 py-5 flex justify-center gap-8 shadow-sm">
 
-    <a href="/" className="font-bold">
-      🌻 首页
-    </a>
+   <a href="/" className="font-bold">
+  首页
+</a>
 
-    <a href="/daily" className="font-bold">
-      ✨ 每日记录
-    </a>
+<a href="/daily" className="font-bold">
+  每日记录
+</a>
 
-    <a href="/dance" className="font-bold">
-      💃 舞蹈记录
-    </a>
+<a href="/dance" className="font-bold">
+  舞蹈记录
+</a>
 
-    <a href="/colors" className="font-bold">
-      🎨 色彩档案
-    </a>
+<a href="/colors" className="font-bold">
+  色彩档案
+</a> 
 
   </nav>
 
