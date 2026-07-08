@@ -50,7 +50,10 @@ export default function RootLayout({
   </nav>
 
 
-  {children}
+    {children}
+
+
+ 
 
 </body>
     </html>

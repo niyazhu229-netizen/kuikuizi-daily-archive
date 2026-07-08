@@ -1,7 +1,7 @@
 import { dailyRecords } from "@/data/daily";
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#FFF9EE] text-[#5A4636]">
+    <main className="relative min-h-screen bg-[#FFF9EE] text-[#5A4636]">
      
 
       {/* 首页主视觉 */}
@@ -141,6 +141,11 @@ export default function Home() {
 
 </div>
 </section>
+<img
+  src="/images/watermark.png"
+  alt="watermark"
+  className="absolute right-5 bottom-5 w-32 opacity-80"
+/>
     </main>
   );
 }
