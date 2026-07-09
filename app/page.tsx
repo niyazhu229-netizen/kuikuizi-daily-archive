@@ -27,10 +27,12 @@ export default function Home() {
           每一次妆造 · 每一支舞蹈 · 每一种属于她的颜色
         </p>
 
-        <button className="mt-10 px-8 py-3 rounded-full bg-[#F6C945] text-white font-medium shadow-md hover:scale-105 transition">
-          开始浏览
-        </button>
-
+       <a
+  href="/about"
+  className="mt-10 inline-block px-8 py-3 rounded-full bg-[#F6C945] text-white font-medium shadow-md hover:scale-105 transition"
+>
+  关于葵葵子
+</a>
       </section>
 
 
