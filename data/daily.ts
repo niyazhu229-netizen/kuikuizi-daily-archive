@@ -1,5 +1,28 @@
 export const dailyRecords = [
   {
+  date: "2026.07.09"
+,
+  image: "/photos/2026-07-09.jpg"
+,
+  color: "活力橙"
+,
+  colorCode: "#ff953e"
+,
+  keywords: "童趣 · 元气 · 俏皮"
+,
+
+  dance
+: {
+    name: "QQ爱"
+,
+    video: "/videos/2026-07-09.mp4"
+,
+    note: "萌神"
+  },
+
+  note: "xxx"
+}
+  {
   date: "2026.07.08",
   image: "/photos/2026-07-08.jpg",
   color: "牛仔蓝",
@@ -12,7 +35,7 @@ export const dailyRecords = [
     note: "🧸"
   },
 
-  note: "记录葵葵子的每一天。"
+  note: "美成啥样了"
 },
   {
     date: "2026.07.07",
