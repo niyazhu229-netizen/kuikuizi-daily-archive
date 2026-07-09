@@ -1,88 +1,63 @@
 import { dailyRecords } from "@/data/daily";
 
 export default function ColorsPage() {
-  console.log(dailyRecords);  
   return (
-    <main className="min-h-screen bg-[#FFF9EE] px-8 py-16">
+    <main className="min-h-screen bg-[#FFF9EE] px-8 py-16 text-[#5A4636]">
 
       <h1 className="text-4xl font-bold text-center mb-12 tracking-widest">
         🎨 色彩档案
       </h1>
 
+      <section className="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">
 
-      <section className="max-w-4xl mx-auto">
+        {dailyRecords.map((item) => (
 
-        <div className="relative">
+          <div
+            key={item.date}
+            className="bg-white rounded-3xl p-8 shadow-sm"
+          >
 
-          <div className="absolute left-5 top-0 bottom-0 w-1 bg-[#F6C945]" />
+            <p className="opacity-60">
+              📅 {item.date}
+            </p>
 
 
-          <div className="space-y-10">
+            <div className="mt-6">
 
-            {dailyRecords.map((item) => (
+              <p className="mb-3">
+                🎨 颜色
+              </p>
 
               <div
-                key={item.date}
-                className="relative pl-16"
-              >
+                className="w-16 h-16 rounded-full border"
+                style={{
+                  backgroundColor: item.colorCode
+                }}
+              />
+
+              <p className="mt-3 text-lg font-bold">
+                {item.color}
+              </p>
+
+            </div>
 
 
-                {/* 时间点 */}
-                <div
-                  className="absolute left-0 top-8 w-10 h-10 rounded-full flex items-center justify-center border"
-                  style={{
-                    backgroundColor: item.colorCode
-                  }}
-                >
-                  🌻
-                </div>
+            <p className="mt-6">
+              🏷️ {item.keywords}
+            </p>
 
 
-                <div className="bg-white rounded-3xl p-8 shadow-sm">
+            <a
+              href="/daily"
+              className="inline-block mt-6 text-[#D99A00]"
+            >
+              查看记录 →
+            </a>
 
-
-                  <p className="opacity-60">
-                    {item.date}
-                  </p>
-
-
-                  <h2 className="text-2xl font-bold mt-4">
-                    🎨 {item.color}
-                  </h2>
-
-
-                  <p className="mt-3 opacity-70">
-                    {item.keywords}
-                  </p>
-
-
-                  <div className="mt-6 flex items-center gap-4">
-
-                    <div
-                      className="w-16 h-16 rounded-full border"
-                      style={{
-                        backgroundColor: item.colorCode
-                      }}
-                    />
-
-
-                    <span>
-                      {item.colorCode}
-                    </span>
-
-                  </div>
-
-
-                </div>
-
-
-              </div>
-
-            ))}
 
           </div>
 
-        </div>
+        ))}
 
       </section>
 

@@ -8,51 +8,57 @@ export default function DancePage() {
       </h1>
 
 
-      <section className="max-w-3xl mx-auto">
+      <section className="max-w-3xl mx-auto space-y-8">
 
-        <div className="bg-white rounded-3xl p-8 shadow-sm">
+  {dailyRecords
+    .filter((item) => item.dance?.video)
+    .map((item) => (
 
-         <p className="opacity-60">
-  {dailyRecords[0].date}
-</p>
+    <div
+      key={item.date}
+      className="bg-white rounded-3xl p-8 shadow-sm"
+    >
 
-
-          <h2 className="text-2xl font-bold mt-4">
-            🎵 舞蹈名称
-          </h2>
-
-          <p className="mt-4">
-            {dailyRecords[0].dance.name}
-          </p>
+      <p className="opacity-60">
+        {item.date}
+      </p>
 
 
-          <h2 className="text-2xl font-bold mt-8">
-            🎬 视频记录
-          </h2>
+      <h2 className="text-2xl font-bold mt-4">
+        🎵 舞蹈名称
+      </h2>
 
-          {dailyRecords[0].dance.video ? (
-  <video
-    src={dailyRecords[0].dance.video}
-    controls
-    className="w-full rounded-2xl mt-4"
-  />
-) : (
-  <div className="mt-4 bg-gray-100 rounded-2xl h-64 flex items-center justify-center">
-    视频待添加
-  </div>
-)}
+      <p className="mt-4">
+        {item.dance.name}
+      </p>
 
-          <h2 className="text-2xl font-bold mt-8">
-            📝 备注
-          </h2>
 
-          <p className="mt-4">
-            {dailyRecords[0].dance.note}
-          </p>
+      <h2 className="text-2xl font-bold mt-8">
+        🎬 视频记录
+      </h2>
 
-        </div>
 
-      </section>
+      <video
+        src={item.dance.video}
+        controls
+        className="w-full rounded-2xl mt-4"
+      />
+
+
+      <h2 className="text-2xl font-bold mt-8">
+        📝 备注
+      </h2>
+
+      <p className="mt-4">
+        {item.dance.note}
+      </p>
+
+
+    </div>
+
+  ))}
+
+</section>
 
     </main>
   );

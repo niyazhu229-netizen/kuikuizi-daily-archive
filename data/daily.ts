@@ -3,7 +3,7 @@ export const dailyRecords = [
   date: "2026.07.08",
   image: "/photos/2026-07-08.jpg",
   color: "牛仔蓝",
-  colorCode: "#2d63d7",
+  colorCode: "#324f90",
   keywords: "甜酷 · 韩系 · 元气",
 
   dance: {
