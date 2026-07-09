@@ -20,8 +20,8 @@ export const dailyRecords = [
     note: "萌神"
   },
 
-  note: "xxx"
-}
+  note: "好活力"
+},
   {
   date: "2026.07.08",
   image: "/photos/2026-07-08.jpg",
