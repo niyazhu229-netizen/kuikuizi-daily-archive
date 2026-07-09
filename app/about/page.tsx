@@ -126,7 +126,7 @@ export default function About() {
             🌻 座右铭
           </h3>
 
-          <p className="mt-4 text-2xl font-bold">
+          <p className="mt-4 text-xl md:text-2xl font-bold whitespace-nowrap">
   笑口常开 好彩自然来
 </p>
 
