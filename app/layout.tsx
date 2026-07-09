@@ -50,9 +50,45 @@ export default function RootLayout({
   </nav>
 
 
-    {children}
+    
+{children}
 
 
+<footer className="mt-auto bg-[#FFF9EE] py-10 text-center text-[#5A4636]">
+
+  <p className="font-bold text-lg">
+    🌻 KUIKUIZI Daily Archive
+  </p>
+
+  
+
+ <div className="mt-6 max-w-md mx-auto px-6">
+
+  <p className="leading-relaxed">
+    用心记录每一个关于葵葵子的瞬间，
+    <br />
+    收藏那些闪闪发光的日子。
+  </p>
+
+  
+
+  <p className="mt-5 font-bold">
+    —— NiyaraZ
+  </p>
+
+</div>
+
+
+  <p className="mt-8 text-xs opacity-50">
+    Created by NiyaraZ
+    <br />
+    A little archive filled with love for KUIKUIZI 🌻
+    <br />
+    © 2026 KUIKUIZI Daily Archive
+  </p>
+
+
+</footer>
  
 
 </body>

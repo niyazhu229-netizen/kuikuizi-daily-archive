@@ -145,8 +145,7 @@ export default function Home() {
 </section>
 <img
   src="/images/watermark.png"
-  alt="watermark"
-  className="absolute right-5 bottom-5 w-32 opacity-80"
+  className="absolute bottom-6 right-6 w-24 opacity-40"
 />
     </main>
   );
