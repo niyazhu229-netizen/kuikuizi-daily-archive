@@ -23,9 +23,11 @@ export default function About() {
         {/* 头像区域 */}
         <div className="flex justify-center">
 
-          <div className="w-40 h-40 rounded-full bg-[#F6C945] flex items-center justify-center text-6xl">
-            🌻
-          </div>
+          <img
+  src="/images/kuikuizi-avatar.png"
+  alt="葵葵子"
+  className="w-40 h-40 rounded-full object-cover"
+/>
 
         </div>
 
