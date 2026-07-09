@@ -101,14 +101,14 @@ export default function About() {
 
             <p>
               🎨 最喜欢的颜色：
-              <br />
+              
               所有高饱和的颜色
             </p>
 
 
             <p>
               🍂 最喜欢的季节：
-              <br />
+             
               秋天
             </p>
 
