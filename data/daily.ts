@@ -1,5 +1,28 @@
 export const dailyRecords = [
   {
+  date: "2026.07.14"
+,
+  image: "/photos/2026-07-14.jpg"
+,
+  color: "薄荷绿"
+,
+  colorCode: "#9fffdf"
+,
+  keywords: "森系 · 纯欲 · 度假风"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-07-14.mp4"
+,
+    note: "实在美丽"
+  },
+
+  note: "猫啃版草帽👒"
+},
+  {
   date: "2026.07.13"
 ,
   image: "/photos/2026-07-13.jpg"
@@ -31,7 +54,7 @@ export const dailyRecords = [
 ,
   colorCode: "#ffffff"
 ,
-  keywords: "活力 · 青春 · 运动"
+  keywords: "活力 · 青春 · 运动风"
 ,
 
   dance
