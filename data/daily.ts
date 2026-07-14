@@ -1,5 +1,28 @@
 export const dailyRecords = [
   {
+  date: "2026.07.10"
+,
+  image: "/photos/2026-07-10.jpg"
+,
+  color: "温柔紫"
+,
+  colorCode: "#ffa8fe"
+,
+  keywords: "甜美 · 纯欲 · 女团"
+,
+
+  dance
+: {
+    name: "已经有我啦"
+,
+    video: "/videos/2026-07-10.mp4"
+,
+    note: "学姐放学等我一起走"
+  },
+
+  note: "我爱高马尾~紫色很有韵味捏"
+},
+  {
   date: "2026.07.09"
 ,
   image: "/photos/2026-07-09.jpg"
