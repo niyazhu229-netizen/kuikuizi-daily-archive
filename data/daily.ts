@@ -1,5 +1,51 @@
 export const dailyRecords = [
   {
+  date: "2026.07.13"
+,
+  image: "/photos/2026-07-13.jpg"
+,
+  color: "淡粉"
+,
+  colorCode: "#ffbbca"
+,
+  keywords: "甜美 · 优雅 · 清新"
+,
+
+  dance
+: {
+    name: "复仇摇"
+,
+    video: "/videos/2026-07-13.mp4"
+,
+    note: "葵葵姐姐~"
+  },
+
+  note: "完全大女人来的"
+},
+   {
+  date: "2026.07.12"
+,
+  image: "/photos/2026-07-12.jpg"
+,
+  color: "清爽白"
+,
+  colorCode: "#ffffff"
+,
+  keywords: "活力 · 青春 · 运动"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-07-12.mp4"
+,
+    note: "cr🐧💤 一起去打羽毛球吧"
+  },
+
+  note: "好活力的女大"
+},
+  {
   date: "2026.07.10"
 ,
   image: "/photos/2026-07-10.jpg"
