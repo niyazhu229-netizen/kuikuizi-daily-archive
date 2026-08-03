@@ -1,4 +1,96 @@
 export const dailyRecords = [
+   {
+  date: "2026.07.24"
+,
+  image: "/photos/2026-07-24.jpg"
+,
+  color: "纯净白"
+,
+  colorCode: "#ffffff"
+,
+  keywords: "纯欲 · 仙气 · 甜美"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-07-24.mp4"
+,
+    note: "妈妈我看到天使了"
+  },
+
+  note: "my angel"
+},
+   {
+  date: "2026.07.23"
+,
+  image: "/photos/2026-07-23.jpg"
+,
+  color: "复古蓝"
+,
+  colorCode: "#232d8b"
+,
+  keywords: "美式 · 复古 · 辣妹"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-07-23.mp4"
+,
+    note: "有劲儿"
+  },
+
+  note: "好帅哦~"
+},
+   {
+  date: "2026.07.22"
+,
+  image: "/photos/2026-07-22.jpg"
+,
+  color: "豹纹黄"
+,
+  colorCode: "#b9951d"
+,
+  keywords: "摩登 · 野性 · 利落"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-07-22.mp4"
+,
+    note: "葵葵姐姐~"
+  },
+
+  note: "姐姐~"
+},
+   {
+  date: "2026.07.21"
+,
+  image: "/photos/2026-07-21.jpg"
+,
+  color: "奶黄"
+,
+  colorCode: "#fffed8"
+,
+  keywords: "甜美 · 清新 · 软萌"
+,
+
+  dance
+: {
+    name: "表白"
+,
+    video: "/videos/2026-07-21.mp4"
+,
+    note: "好想跟你表白~"
+  },
+
+  note: "亲一口~"
+},
   {
   date: "2026.07.18"
 ,
