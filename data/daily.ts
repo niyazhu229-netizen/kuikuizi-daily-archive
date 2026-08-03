@@ -1,4 +1,27 @@
 export const dailyRecords = [
+  {
+  date: "2026.07.25"
+,
+  image: "/photos/2026-07-25.jpg"
+,
+  color: "海军蓝"
+,
+  colorCode: "#001a7a"
+,
+  keywords: "学院 · 乖巧 · 青春"
+,
+
+  dance
+: {
+    name: "OVERDRIVE"
+,
+    video: "/videos/2026-07-25.mp4"
+,
+    note: "嗯~"
+  },
+
+  note: "学姐放学等我"
+},
    {
   date: "2026.07.24"
 ,
