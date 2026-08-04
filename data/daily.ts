@@ -1,4 +1,165 @@
 export const dailyRecords = [
+   {
+  date: "2026.08.03"
+,
+  image: "/photos/2026-08-03.jpg"
+,
+  color: "暗魅紫"
+,
+  colorCode: "#471259"
+,
+  keywords: "暗黑 · 甜酷 · 萝莉"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-08-03.mp4"
+,
+    note: "萌的不行了"
+  },
+
+  note: "库洛小葵~"
+},
+  {
+  date: "2026.08.02"
+,
+  image: "/photos/2026-08-02.jpg"
+,
+  color: "薄荷绿"
+,
+  colorCode: "#51fff1"
+,
+  keywords: "软萌 · 清爽 · 甜美"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-08-02.mp4"
+,
+    note: "女鹅女鹅"
+  },
+
+  note: "亲！！！！~"
+},
+  {
+  date: "2026.07.31"
+,
+  image: "/photos/2026-07-31.jpg"
+,
+  color: "蜜橘黄"
+,
+  colorCode: "#ffb151"
+,
+  keywords: "华丽 · 精致 · 活力"
+,
+
+  dance
+: {
+    name: "打火机"
+,
+    video: "/videos/2026-07-31.mp4"
+,
+    note: "好萌吧！！！"
+  },
+
+  note: "完全小兔子~"
+},
+   {
+  date: "2026.07.30"
+,
+  image: "/photos/2026-07-30.jpg"
+,
+  color: "典雅白"
+,
+  colorCode: "#ffffff"
+,
+  keywords: "复古 · 千金 · 优雅"
+,
+
+  dance
+: {
+    name: "走秀"
+,
+    video: "/videos/2026-07-30.mp4"
+,
+    note: "cr 秋."
+  },
+
+  note: "老爷 大小姐又出逃啦"
+},
+  {
+  date: "2026.07.29"
+,
+  image: "/photos/2026-07-29.jpg"
+,
+  color: "甜彩白"
+,
+  colorCode: "#ffffff"
+,
+  keywords: "活力 · 童趣 · 软萌"
+,
+
+  dance
+: {
+    name: "第一天"
+,
+    video: "/videos/2026-07-29.mp4"
+,
+    note: "好棒"
+  },
+
+  note: "最棒的葵葵子&葵花籽"
+},
+  {
+  date: "2026.07.28"
+,
+  image: "/photos/2026-07-28.jpg"
+,
+  color: "浅雾紫"
+,
+  colorCode: "#b89cc6"
+,
+  keywords: "韩系 · 精致 · 千金"
+,
+
+  dance
+: {
+    name: "想陪你翻山越岭"
+,
+    video: "/videos/2026-07-28.mp4"
+,
+    note: "cr Yuwei"
+  },
+
+  note: "好漂亮呀亲一口"
+},
+  {
+  date: "2026.07.27"
+,
+  image: "/photos/2026-07-27.jpg"
+,
+  color: "清冷灰"
+,
+  colorCode: "#767676"
+,
+  keywords: "韩系 · 元气 · 清爽"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-07-27.mp4"
+,
+    note: "葵葵学姐"
+  },
+
+  note: "这就是钻六的新成员吗"
+},
   {
   date: "2026.07.25"
 ,
