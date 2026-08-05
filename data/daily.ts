@@ -1,4 +1,27 @@
 export const dailyRecords = [
+  {
+  date: "2026.08.05"
+,
+  image: "/photos/2026-08-05.jpg"
+,
+  color: "焦糖棕"
+,
+  colorCode: "#5f2b00"
+,
+  keywords: "乖巧 · 复古 · 甜美"
+,
+
+  dance
+: {
+    name: "Hide Away"
+,
+    video: "/videos/2026-08-05.mp4"
+,
+    note: "有劲儿"
+  },
+
+  note: "韩系甜心"
+},
    {
   date: "2026.08.04"
 ,
