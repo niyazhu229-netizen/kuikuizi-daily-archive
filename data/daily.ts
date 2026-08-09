@@ -1,4 +1,50 @@
 export const dailyRecords = [
+   {
+  date: "2026.08.08"
+,
+  image: "/photos/2026-08-08.jpg"
+,
+  color: "克莱因蓝"
+,
+  colorCode: "#0015d3"
+,
+  keywords: "明艳 · 御姐 · 魅惑"
+,
+
+  dance
+: {
+    name: "跳楼机"
+,
+    video: "/videos/2026-08-08.mp4"
+,
+    note: "baby~"
+  },
+
+  note: "姐姐跟我回家 想在姐姐的腿上滑滑梯"
+},
+ {
+  date: "2026.08.07"
+,
+  image: "/photos/2026-08-07.jpg"
+,
+  color: "墨绿"
+,
+  colorCode: "#0d3b2d"
+,
+  keywords: "异域 · 华贵 · 妖娆"
+,
+
+  dance
+: {
+    name: "芒种"
+,
+    video: "/videos/2026-08-07.mp4"
+,
+    note: "芒种的神"
+  },
+
+  note: "017两周年快乐~"
+},
   {
   date: "2026.08.06"
 ,
