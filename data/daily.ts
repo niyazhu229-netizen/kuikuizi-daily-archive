@@ -1,4 +1,27 @@
 export const dailyRecords = [
+  {
+  date: "2026.08.10"
+,
+  image: "/photos/2026-08-10.jpg"
+,
+  color: "烟雨青"
+,
+  colorCode: "#67b59c"
+,
+  keywords: "温婉 · 仙气 · 清雅"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-08-10.mp4"
+,
+    note: "我家的古风小娘子"
+  },
+
+  note: "天选古人"
+},
    {
   date: "2026.08.08"
 ,
@@ -13,7 +36,7 @@ export const dailyRecords = [
 
   dance
 : {
-    name: "跳楼机"
+    name: "高尔夫"
 ,
     video: "/videos/2026-08-08.mp4"
 ,
