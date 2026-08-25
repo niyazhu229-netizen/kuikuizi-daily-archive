@@ -1,5 +1,28 @@
 export const dailyRecords = [
   {
+  date: "2026.08.18"
+,
+  image: "/photos/2026-08-18.jpg"
+,
+  color: "黑白"
+,
+  colorCode: "#000000"
+,
+  keywords: "甜酷 · 元气 · 俏皮"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-08-18.mp4"
+,
+    note: "好萌！"
+  },
+
+  note: "好想你呀TT"
+},
+  {
   date: "2026.08.11"
 ,
   image: "/photos/2026-08-11.jpg"
