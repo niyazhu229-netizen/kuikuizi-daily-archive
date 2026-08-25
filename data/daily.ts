@@ -1,5 +1,74 @@
 export const dailyRecords = [
   {
+  date: "2026.08.24"
+,
+  image: "/photos/2026-08-24.jpg"
+,
+  color: "可可棕"
+,
+  colorCode: "#5e3821"
+,
+  keywords: "可爱 · 复古 · 童趣"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-08-24.mp4"
+,
+    note: "可爱"
+  },
+
+  note: "一秒接受小熊塑~"
+},
+   {
+  date: "2026.08.23"
+,
+  image: "/photos/2026-08-23.jpg"
+,
+  color: "裸杏"
+,
+  colorCode: "#ffd5bb"
+,
+  keywords: "轻熟 · 优雅 · 知性"
+,
+
+  dance
+: {
+    name: "火力全开"
+,
+    video: "/videos/2026-08-23.mp4"
+,
+    note: "好久没听了 依旧有力气！"
+  },
+
+  note: "欧尼~"
+},
+  {
+  date: "2026.08.21"
+,
+  image: "/photos/2026-08-21.jpg"
+,
+  color: "冷酷黑"
+,
+  colorCode: "#000000"
+,
+  keywords: "冷艳 · 御姐 · 魅惑"
+,
+
+  dance
+: {
+    name: "nini摇"
+,
+    video: "/videos/2026-08-21.mp4"
+,
+    note: "不知道该往哪里看了"
+  },
+
+  note: "完全女团!"
+},
+  {
   date: "2026.08.20"
 ,
   image: "/photos/2026-08-20.jpg"
