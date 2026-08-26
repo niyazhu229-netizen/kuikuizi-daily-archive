@@ -1,4 +1,27 @@
 export const dailyRecords = [
+   {
+  date: "2026.08.26"
+,
+  image: "/photos/2026-08-26.jpg"
+,
+  color: "烈焰红"
+,
+  colorCode: "#b61b1b"
+,
+  keywords: "酷飒 · 热辣 · 野性"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-08-26.mp4"
+,
+    note: "姐姐好帅"
+  },
+
+  note: "原皮葵葵飒飒飒！！！"
+},
   {
   date: "2026.08.25"
 ,
