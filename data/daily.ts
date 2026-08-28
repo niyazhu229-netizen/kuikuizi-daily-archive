@@ -1,5 +1,28 @@
 export const dailyRecords = [
    {
+  date: "2026.08.28"
+,
+  image: "/photos/2026-08-28.jpg"
+,
+  color: "浅咖"
+,
+  colorCode: "#ffefc7"
+,
+  keywords: "甜酷 · 元气 · 利落"
+,
+
+  dance
+: {
+    name: "恋爱的条件"
+,
+    video: "/videos/2026-08-28.mp4"
+,
+    note: "完全用心！"
+  },
+
+  note: "爱豆级别的"
+},
+   {
   date: "2026.08.27"
 ,
   image: "/photos/2026-08-27.jpg"
@@ -15,7 +38,7 @@ export const dailyRecords = [
 : {
     name: "串烧"
 ,
-    video: "/videos/2026-08-28.mp4"
+    video: "/videos/2026-08-27.mp4"
 ,
     note: "冷脸美女"
   },
