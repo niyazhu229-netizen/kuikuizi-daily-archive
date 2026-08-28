@@ -20,6 +20,7 @@ export default async function DailyDetailPage({
           <h1 className="text-3xl font-bold">
             🌻 找不到这一天的记录
           </h1>
+
           <p className="mt-4 opacity-60">
             暂时没有找到 {formattedDate} 的记录。
           </p >
@@ -32,7 +33,7 @@ export default async function DailyDetailPage({
     <main className="min-h-screen bg-[#FFF9EE] text-[#5A4636] px-8 py-16">
 
       <h1 className="text-4xl font-bold text-center mb-12 tracking-widest">
-        🌻 Daily Record
+        🌻 每日记录
       </h1>
 
       <section className="max-w-4xl mx-auto bg-white rounded-3xl p-8 md:p-10 shadow-sm">
@@ -43,7 +44,7 @@ export default async function DailyDetailPage({
           </p >
 
           <h2 className="text-3xl font-bold mt-3">
-            ✨ Daily Outfit
+            ✨ 今日妆造
           </h2>
         </div>
 
@@ -59,7 +60,7 @@ export default async function DailyDetailPage({
 
           <div className="bg-[#FFF9EE] rounded-2xl p-6">
             <p className="font-bold">
-              🎨 Representative Color
+              🎨 今日代表色
             </p >
 
             <div className="flex items-center gap-4 mt-4">
@@ -82,7 +83,7 @@ export default async function DailyDetailPage({
 
           <div className="bg-[#FFF9EE] rounded-2xl p-6">
             <p className="font-bold">
-              🏷️ Style Keywords
+              🏷️ 风格关键词
             </p >
 
             <p className="mt-2">
@@ -92,7 +93,7 @@ export default async function DailyDetailPage({
 
           <div className="bg-[#FFF9EE] rounded-2xl p-6">
             <p className="font-bold">
-              💃 Dance
+              💃 今日舞蹈
             </p >
 
             <p className="mt-2">
@@ -108,7 +109,7 @@ export default async function DailyDetailPage({
 
           <div className="bg-[#FFF9EE] rounded-2xl p-6">
             <p className="font-bold">
-              📝 Note
+              📝 今日记录
             </p >
 
             <p className="mt-2">

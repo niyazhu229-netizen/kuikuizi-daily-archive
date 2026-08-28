@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { dailyRecords } from "@/data/daily";
 
 export default function CalendarPage() {
@@ -24,18 +25,18 @@ export default function CalendarPage() {
 
             <p className="mt-3">
               {item.color}
-            </p>
+            </p >
 
             <p className="text-sm opacity-70 mt-2">
               {item.keywords}
-            </p>
+            </p >
 
-            <a
-              href="/daily/2026-08-28"
-  className="inline-block mt-5 text-sm text-[#D99A00]"
->
-  查看记录 →
-            </a>
+            <Link
+              href={`/daily/${item.date.replaceAll(".", "-")}`}
+              className="inline-block mt-5 text-sm text-[#D99A00]"
+            >
+              查看记录 →
+            </Link>
           </div>
         ))}
       </div>
