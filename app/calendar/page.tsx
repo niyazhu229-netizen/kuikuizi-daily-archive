@@ -31,10 +31,10 @@ export default function CalendarPage() {
             </p>
 
             <a
-              href="/daily"
-              className="inline-block mt-5 text-sm text-[#D99A00]"
-            >
-              查看记录 →
+              href="/daily/2026-08-28"
+  className="inline-block mt-5 text-sm text-[#D99A00]"
+>
+  查看记录 →
             </a>
           </div>
         ))}
