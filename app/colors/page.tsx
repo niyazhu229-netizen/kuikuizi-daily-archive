@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { dailyRecords } from "@/data/daily";
 
 export default function ColorsPage() {
@@ -19,14 +20,13 @@ export default function ColorsPage() {
 
             <p className="opacity-60">
               📅 {item.date}
-            </p>
-
+            </p >
 
             <div className="mt-6">
 
               <p className="mb-3">
                 🎨 颜色
-              </p>
+              </p >
 
               <div
                 className="w-16 h-16 rounded-full border"
@@ -37,23 +37,20 @@ export default function ColorsPage() {
 
               <p className="mt-3 text-lg font-bold">
                 {item.color}
-              </p>
+              </p >
 
             </div>
 
-
             <p className="mt-6">
               🏷️ {item.keywords}
-            </p>
+            </p >
 
-
-            <a
-              href="/daily"
+            <Link
+              href={`/daily/${item.date.replaceAll(".", "-")}`}
               className="inline-block mt-6 text-[#D99A00]"
             >
               查看记录 →
-            </a>
-
+            </Link>
 
           </div>
 
