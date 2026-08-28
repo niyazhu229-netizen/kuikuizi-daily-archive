@@ -1,5 +1,28 @@
 export const dailyRecords = [
    {
+  date: "2026.08.27"
+,
+  image: "/photos/2026-08-27.jpg"
+,
+  color: "贵气黑"
+,
+  colorCode: "#000000"
+,
+  keywords: "冷艳 · 矜贵 · 复古"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-08-28.mp4"
+,
+    note: "冷脸美女"
+  },
+
+  note: "姐姐~"
+},
+   {
   date: "2026.08.26"
 ,
   image: "/photos/2026-08-26.jpg"
