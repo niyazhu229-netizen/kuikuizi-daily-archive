@@ -1,4 +1,142 @@
 export const dailyRecords = [
+  {
+  date: "2026.09.04"
+,
+  image: "/photos/2026-09-04.jpg"
+,
+  color: "酷感黑"
+,
+  colorCode: "#000000"
+,
+  keywords: "飒爽 · 冷冽 · 拽酷"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-09-04.mp4"
+,
+    note: "被谁揍了？我帮你打回去"
+  },
+
+  note: "我爱湿发！！！"
+},
+  {
+  date: "2026.09.03"
+,
+  image: "/photos/2026-09-03.jpg"
+,
+  color: "浅桃绿"
+,
+  colorCode: "#a9ff91"
+,
+  keywords: "清新 · 灵秀 · 清雅"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-09-03.mp4"
+,
+    note: "小师妹"
+  },
+
+  note: "剑修第一课~"
+},
+  {
+  date: "2026.09.02"
+,
+  image: "/photos/2026-09-02.jpg"
+,
+  color: "明媚黄"
+,
+  colorCode: "#ffef91"
+,
+  keywords: "童趣 · 俏皮 · 元气"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-09-02.mp4"
+,
+    note: "屁股翘到可以顶起五瓶汽水"
+  },
+
+  note: "梦回24年TT"
+},
+  {
+  date: "2026.09.01"
+,
+  image: "/photos/2026-09-01.jpg"
+,
+  color: "炽烈红"
+,
+  colorCode: "#b31f1f"
+,
+  keywords: "甜酷 · 暗黑 · 朋克"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-09-01.mp4"
+,
+    note: "即使是小恶魔也好萌"
+  },
+
+  note: "好萌的一套"
+},
+  {
+  date: "2026.08.31"
+,
+  image: "/photos/2026-08-31.jpg"
+,
+  color: "奶杏"
+,
+  colorCode: "#7c17ab"
+,
+  keywords: "冷艳 · 魅惑 · 矜贵"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-08-31.mp4"
+,
+    note: "妈妈"
+  },
+
+  note: "紫色确实很有韵味"
+},
+  {
+  date: "2026.08.30"
+,
+  image: "/photos/2026-08-30.jpg"
+,
+  color: "奶杏"
+,
+  colorCode: "#ffdab4"
+,
+  keywords: "华丽 · 精致 · 复古"
+,
+
+  dance
+: {
+    name: "打火机"
+,
+    video: "/videos/2026-08-30.mp4"
+,
+    note: "好萌好萌！"
+  },
+
+  note: "好萌的小兔子"
+},
    {
   date: "2026.08.28"
 ,
