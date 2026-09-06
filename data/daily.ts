@@ -1,4 +1,27 @@
 export const dailyRecords = [
+   {
+  date: "2026.09.06"
+,
+  image: "/photos/2026-09-06.jpg"
+,
+  color: "复古棕"
+,
+  colorCode: "#5a4629"
+,
+  keywords: "复古 · 异域 · 野性"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-09-06.mp4"
+,
+    note: "小海盗把我的心盗走了"
+  },
+
+  note: "我爱上了一个海盗..."
+},
   {
   date: "2026.09.04"
 ,
