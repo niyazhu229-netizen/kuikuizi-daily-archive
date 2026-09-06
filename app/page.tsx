@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { dailyRecords } from "@/data/daily";
 
@@ -58,58 +59,107 @@ export default function Home() {
   };
 
   return (
-    <main className="relative min-h-screen bg-[#FFF9EE] text-[#5A4636]">
+    <main className="relative min-h-screen overflow-hidden bg-[#FFF9EE] text-[#5A4636]">
 
-      {/* 首页主视觉 */}
-      <section className="flex flex-col items-center justify-center text-center px-6 py-24">
+      {/* ================= 首页主视觉 ================= */}
+      <section className="relative pb-16">
 
-        <div className="w-44 h-44 flex items-center justify-center">
+        {/* 顶部 Logo */}
+        <div className="flex items-center justify-center gap-3 px-6 pt-8 md:pt-10">
+
           <img
             src="/images/logo.png"
             alt="KUIKUIZI Daily Archive Logo"
-            className="w-full h-full object-contain"
+            className="h-10 w-10 object-contain md:h-12 md:w-12"
           />
+
+          <p className="text-[10px] tracking-[0.28em] opacity-60 md:text-xs">
+            KUIKUIZI DAILY ARCHIVE
+          </p >
+
         </div>
 
-        <h1 className="mt-8 text-4xl font-bold tracking-[0.15em]">
-          KUIKUIZI Daily Archive
-        </h1>
 
-        <p className="mt-5 text-xl tracking-widest">
-          记录葵葵子的每一天
-        </p >
+        {/* 首页主照片 */}
+        <div className="relative mx-auto mt-6 max-w-5xl px-5 md:px-8">
 
-        <p className="mt-3 text-base opacity-70">
-          每一次妆造 · 每一支舞蹈 · 每一种属于她的颜色
-        </p >
+          <div className="relative overflow-hidden rounded-[2rem] md:rounded-[3rem]">
 
-        <a
-          href=" "
-          className="mt-10 inline-block px-8 py-3 rounded-full bg-[#F6C945] text-white font-medium shadow-md hover:scale-105 transition"
-        >
-          关于葵葵子
-        </a >
+            <img
+              src="/images/home.jpg"
+              alt="葵葵子"
+              className="h-[500px] w-full object-cover object-center md:h-[680px]"
+            />
+
+            {/* 照片底部渐变 */}
+            <div className="absolute inset-x-0 bottom-0 h-[50%] bg-gradient-to-t from-[#FFF9EE] via-[#FFF9EE]/80 to-transparent" />
+
+          </div>
+
+        </div>
+
+
+        {/* 主标题 */}
+        <div className="relative z-10 -mt-28 px-6 text-center md:-mt-36">
+
+          <p className="text-[10px] tracking-[0.35em] opacity-50 md:text-xs">
+            PERSONAL ARCHIVE
+          </p >
+
+          <h1 className="mt-4 text-4xl font-bold tracking-[0.12em] md:text-6xl">
+            KUIKUIZI
+          </h1>
+
+          <p className="mt-2 text-sm tracking-[0.32em] opacity-75 md:text-lg">
+            DAILY ARCHIVE
+          </p >
+
+          <div className="mx-auto mt-6 h-[2px] w-12 rounded-full bg-[#F6C945]" />
+
+          <p className="mt-7 text-lg tracking-widest md:text-2xl">
+            记录葵葵子的每一天
+          </p >
+
+          <p className="mx-auto mt-3 max-w-xl text-sm leading-7 opacity-60 md:text-base">
+            每一次妆造 · 每一支舞蹈 · 每一种属于她的颜色
+          </p >
+
+
+          {/* 关于按钮 */}
+          <Link
+            href="/about"
+            className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#F6C945] px-8 py-3 text-sm font-medium text-white shadow-md transition hover:scale-105 hover:shadow-lg"
+          >
+            关于葵葵子
+            <span>→</span>
+          </Link>
+
+        </div>
 
       </section>
 
 
-      {/* 每月记录 */}
-      <section className="max-w-4xl mx-auto px-5 md:px-8 pb-20">
+      {/* ================= 每日记录月历 ================= */}
+      <section className="mx-auto max-w-4xl px-5 pb-24 pt-4 md:px-8">
 
-        <div className="bg-white rounded-3xl p-5 md:p-9 shadow-sm">
+        <div className="rounded-[2rem] bg-white p-5 shadow-sm md:rounded-[2.5rem] md:p-9">
 
-          {/* 标题 */}
           <div className="flex items-center justify-between">
 
             <button
               onClick={goPreviousMonth}
-              className="w-10 h-10 rounded-full bg-[#FFF9EE] hover:bg-[#F6C945] hover:text-white transition text-lg"
+              className="h-10 w-10 rounded-full bg-[#FFF9EE] text-lg transition hover:bg-[#F6C945] hover:text-white"
             >
               ‹
             </button>
 
             <div className="text-center">
-              <h2 className="text-2xl font-bold tracking-widest">
+
+              <p className="text-[10px] tracking-[0.3em] opacity-45">
+                DAILY RECORD
+              </p >
+
+              <h2 className="mt-2 text-2xl font-bold tracking-widest">
                 🌻 每日记录
               </h2>
 
@@ -117,11 +167,12 @@ export default function Home() {
                 {currentYear} ·{" "}
                 {String(currentMonth + 1).padStart(2, "0")}
               </p >
+
             </div>
 
             <button
               onClick={goNextMonth}
-              className="w-10 h-10 rounded-full bg-[#FFF9EE] hover:bg-[#F6C945] hover:text-white transition text-lg"
+              className="h-10 w-10 rounded-full bg-[#FFF9EE] text-lg transition hover:bg-[#F6C945] hover:text-white"
             >
               ›
             </button>
@@ -129,14 +180,13 @@ export default function Home() {
           </div>
 
 
-          {/* 星期 */}
-          <div className="grid grid-cols-7 gap-1.5 md:gap-2 mt-7">
+          <div className="mt-7 grid grid-cols-7 gap-1.5 md:gap-2">
 
             {["一", "二", "三", "四", "五", "六", "日"].map(
               (day) => (
                 <div
                   key={day}
-                  className="text-center text-xs opacity-50 py-2"
+                  className="py-2 text-center text-xs opacity-50"
                 >
                   {day}
                 </div>
@@ -144,7 +194,6 @@ export default function Home() {
             )}
 
 
-            {/* 日期 */}
             {calendarDays.map((day, index) => {
 
               if (day === null) {
@@ -163,22 +212,24 @@ export default function Home() {
                 (record) => record.date === dateString
               );
 
+
               if (!item) {
                 return (
                   <div
                     key={dateString}
-                    className="aspect-square flex items-center justify-center rounded-2xl text-sm opacity-25"
+                    className="flex aspect-square items-center justify-center rounded-2xl text-sm opacity-25"
                   >
                     {day}
                   </div>
                 );
               }
 
+
               return (
-                <a
+                <Link
                   key={dateString}
                   href={`/daily/${dateString.replaceAll(".", "-")}`}
-                  className="aspect-square rounded-2xl bg-[#FFF9EE] flex flex-col items-center justify-center hover:bg-[#FFF4D6] hover:scale-105 transition"
+                  className="flex aspect-square flex-col items-center justify-center rounded-2xl bg-[#FFF9EE] transition hover:scale-105 hover:bg-[#FFF4D6]"
                 >
 
                   <span className="text-sm font-bold">
@@ -186,20 +237,20 @@ export default function Home() {
                   </span>
 
                   <span
-                    className="w-4 h-4 rounded-full mt-1.5 border border-white shadow-sm"
+                    className="mt-1.5 h-4 w-4 rounded-full border border-white shadow-sm"
                     style={{
                       backgroundColor: item.colorCode,
                     }}
                   />
 
-                </a >
+                </Link>
               );
             })}
 
           </div>
 
 
-          <p className="text-center mt-6 text-xs opacity-40">
+          <p className="mt-6 text-center text-xs opacity-40">
             点击有记录的日期查看当天详情
           </p >
 
@@ -208,104 +259,86 @@ export default function Home() {
       </section>
 
 
-      {/* 网站介绍 */}
-      <section className="max-w-5xl mx-auto px-8 pb-24 grid md:grid-cols-3 gap-8">
+      {/* ================= 最新档案 ================= */}
+      <section className="mx-auto max-w-5xl px-5 pb-24 md:px-8">
 
-        <a
-          href="/daily"
-          className="bg-white rounded-3xl p-8 shadow-sm block hover:scale-105 transition"
-        >
-          <div className="text-4xl mb-4">✨</div>
+        <div className="text-center">
 
-          <h2 className="text-xl font-bold mb-3">
-            每日记录
+          <p className="text-[10px] tracking-[0.35em] opacity-50 md:text-xs">
+            LATEST ARCHIVE
+          </p >
+
+          <h2 className="mt-3 text-3xl font-bold tracking-widest">
+            最新档案
           </h2>
 
-          <p>
-            收藏葵葵子的每日造型，记录每一次风格变化。
+          <p className="mt-4 text-sm opacity-55">
+            最近收藏的葵葵子瞬间
           </p >
-        </a >
+
+        </div>
 
 
-        <a
-          href="/dance"
-          className="bg-white rounded-3xl p-8 shadow-sm block hover:scale-105 transition"
-        >
-          <div className="text-4xl mb-4">💃</div>
-
-          <h2 className="text-xl font-bold mb-3">
-            舞蹈记录
-          </h2>
-
-          <p>
-            保存每一次舞蹈瞬间。
-          </p >
-        </a >
-
-
-        <a
-          href="/colors"
-          className="bg-white rounded-3xl p-8 shadow-sm block hover:scale-105 transition"
-        >
-          <div className="text-4xl mb-4">🎨</div>
-
-          <h2 className="text-xl font-bold mb-3">
-            色彩档案
-          </h2>
-
-          <p>
-            记录每天属于葵葵子的颜色。
-          </p >
-        </a >
-
-      </section>
-
-
-      {/* 最新档案 */}
-      <section className="max-w-5xl mx-auto px-8 pb-24">
-
-        <h2 className="text-3xl font-bold text-center mb-10 tracking-widest">
-          🌻 最新档案
-        </h2>
-
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 md:gap-8">
 
           {dailyRecords.slice(0, 2).map((item) => (
 
-            <div
+            <Link
               key={item.date}
-              className="bg-white rounded-3xl p-8 shadow-sm"
+              href={`/daily/${item.date.replaceAll(".", "-")}`}
+              className="group block overflow-hidden rounded-[2rem] bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
 
-              <p className="opacity-60">
-                {item.date}
-              </p >
-
-              <h3 className="mt-4 text-xl font-bold">
-                ✨ 今日妆造
-              </h3>
-
               {item.image && (
-                <img
-                  src={item.image}
-                  alt="今日妆造"
-                  className="w-full rounded-2xl mt-6"
-                />
+                <div className="overflow-hidden">
+
+                  <img
+                    src={item.image}
+                    alt="今日妆造"
+                    className="h-[360px] w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                  />
+
+                </div>
               )}
 
-              <p className="mt-4">
-                今日代表色：
-                <span className="font-bold">
-                  {item.color}
-                </span>
-              </p >
 
-              <p className="mt-2">
-                穿搭关键词：
-                {item.keywords}
-              </p >
+              <div className="p-7">
 
-            </div>
+                <div className="flex items-center justify-between">
+
+                  <p className="text-sm opacity-50">
+                    {item.date}
+                  </p >
+
+                  <span
+                    className="h-5 w-5 rounded-full border border-white shadow-sm"
+                    style={{
+                      backgroundColor: item.colorCode,
+                    }}
+                  />
+
+                </div>
+
+
+                <h3 className="mt-5 text-xl font-bold">
+                  今日妆造
+                </h3>
+
+                <p className="mt-3 text-sm leading-6 opacity-65">
+                  <span className="font-medium text-[#5A4636]">
+                    {item.color}
+                  </span>
+                  {" · "}
+                  {item.keywords}
+                </p >
+
+                <p className="mt-6 text-sm font-medium text-[#D9A900]">
+                  查看当天档案 →
+                </p >
+
+              </div>
+
+            </Link>
 
           ))}
 
@@ -314,9 +347,97 @@ export default function Home() {
       </section>
 
 
+      {/* ================= 网站入口 ================= */}
+      <section className="mx-auto grid max-w-5xl gap-5 px-5 pb-24 md:grid-cols-3 md:gap-8 md:px-8">
+
+        <Link
+          href="/daily"
+          className="block rounded-[2rem] bg-white p-7 shadow-sm transition hover:-translate-y-2 hover:shadow-lg"
+        >
+          <div className="mb-5 text-3xl">
+            ✨
+          </div>
+
+          <p className="text-[10px] tracking-[0.25em] opacity-40">
+            DAILY
+          </p >
+
+          <h2 className="mt-2 text-xl font-bold">
+            每日记录
+          </h2>
+
+          <p className="mt-3 text-sm leading-6 opacity-60">
+            收藏葵葵子的每日造型，记录每一次风格变化。
+          </p >
+
+          <p className="mt-6 text-sm font-medium text-[#D9A900]">
+            浏览档案 →
+          </p >
+
+        </Link>
+
+
+        <Link
+          href="/dance"
+          className="block rounded-[2rem] bg-white p-7 shadow-sm transition hover:-translate-y-2 hover:shadow-lg"
+        >
+          <div className="mb-5 text-3xl">
+            💃
+          </div>
+
+          <p className="text-[10px] tracking-[0.25em] opacity-40">
+            DANCE
+          </p >
+
+          <h2 className="mt-2 text-xl font-bold">
+            舞蹈记录
+          </h2>
+
+          <p className="mt-3 text-sm leading-6 opacity-60">
+            保存每一次舞蹈瞬间。
+          </p >
+
+          <p className="mt-6 text-sm font-medium text-[#D9A900]">
+            浏览档案 →
+          </p >
+
+        </Link>
+
+
+        <Link
+          href="/colors"
+          className="block rounded-[2rem] bg-white p-7 shadow-sm transition hover:-translate-y-2 hover:shadow-lg"
+        >
+          <div className="mb-5 text-3xl">
+            🎨
+          </div>
+
+          <p className="text-[10px] tracking-[0.25em] opacity-40">
+            COLORS
+          </p >
+
+          <h2 className="mt-2 text-xl font-bold">
+            色彩档案
+          </h2>
+
+          <p className="mt-3 text-sm leading-6 opacity-60">
+            记录每天属于葵葵子的颜色。
+          </p >
+
+          <p className="mt-6 text-sm font-medium text-[#D9A900]">
+            浏览档案 →
+          </p >
+
+        </Link>
+
+      </section>
+
+
+      {/* 水印 */}
       <img
         src="/images/watermark.png"
-        className="absolute bottom-6 right-6 w-24 opacity-40"
+        alt="watermark"
+        className="absolute bottom-6 right-6 w-20 opacity-35 md:w-24"
       />
 
     </main>
