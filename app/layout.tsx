@@ -25,38 +25,51 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <nav className="relative z-50 bg-white px-3 md:px-8 py-5 flex justify-center gap-4 md:gap-8 shadow-sm">
-          <Link
-            href="/"
-            className="font-bold text-[#3F2D22] whitespace-nowrap"
-          >
-            首页
-          </Link>
-          <Link
-            href="/daily"
-            className="font-bold text-[#3F2D22] whitespace-nowrap"
-          >
-            每日记录
-          </Link>
-          <Link
-            href="/dance"
-            className="font-bold text-[#3F2D22] whitespace-nowrap"
-          >
-            舞蹈记录
-          </Link>
-          <Link
-            href="/colors"
-            className="font-bold text-[#3F2D22] whitespace-nowrap"
-          >
-            色彩档案
-          </Link>
+        {/* ================= 导航栏 ================= */}
+        <nav className="sticky top-0 z-[9999] bg-white px-3 py-5 shadow-sm md:px-8">
+          <div className="flex justify-center gap-4 md:gap-8">
+            {/* 首页 */}
+            <Link
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "/";
+              }}
+              className="whitespace-nowrap font-bold text-[#3F2D22]"
+            >
+              首页
+            </Link>
+            {/* 每日记录 */}
+            <Link
+              href="/daily"
+              className="whitespace-nowrap font-bold text-[#3F2D22]"
+            >
+              每日记录
+            </Link>
+            {/* 舞蹈记录 */}
+            <Link
+              href="/dance"
+              className="whitespace-nowrap font-bold text-[#3F2D22]"
+            >
+              舞蹈记录
+            </Link>
+            {/* 色彩档案 */}
+            <Link
+              href="/colors"
+              className="whitespace-nowrap font-bold text-[#3F2D22]"
+            >
+              色彩档案
+            </Link>
+          </div>
         </nav>
+        {/* ================= 页面内容 ================= */}
         {children}
+        {/* ================= 页脚 ================= */}
         <footer className="mt-auto bg-[#FFF9EE] py-10 text-center text-[#5A4636]">
-          <p className="font-bold text-lg">
+          <p className="text-lg font-bold">
             🌻 KUIKUIZI Daily Archive
           </p >
-          <div className="mt-6 max-w-md mx-auto px-6">
+          <div className="mx-auto mt-6 max-w-md px-6">
             <p className="leading-relaxed">
               用心记录每一个关于葵葵子的瞬间，
               <br />
