@@ -1,62 +1,80 @@
+import Link from "next/link";
 import { dailyRecords } from "@/data/daily";
-
-export default function DancePage() {
+export default function DailyPage() {
   return (
-    <main className="min-h-screen bg-[#FFF8E7] px-6 py-16">
-
-      <h1 className="text-4xl font-bold text-center mb-12 tracking-widest">
-        💃 舞蹈记录
+    <main className="min-h-screen bg-[#FFF9EE] px-8 py-16 text-[#5A4636]">
+      {/* ================= 标题 ================= */}
+      <h1 className="mb-12 text-center text-4xl font-bold tracking-widest">
+        🌻 每日记录
       </h1>
-
-      <section className="max-w-3xl mx-auto space-y-8">
-
-        {dailyRecords
-          .filter((item) => item.dance?.video)
-          .map((item) => (
-
-            <div
-              key={item.date}
-              id={`dance-${item.date}`}
-              className="bg-white rounded-3xl p-8 shadow-sm scroll-mt-8"
-            >
-
-              <p className="opacity-60">
-                {item.date}
-              </p >
-
-              <h2 className="text-2xl font-bold mt-4">
-                🎵 舞蹈名称
-              </h2>
-
-              <p className="mt-4">
-                {item.dance.name}
-              </p >
-
-              <h2 className="text-2xl font-bold mt-8">
-                🎬 视频记录
-              </h2>
-
-              <video
-                src={item.dance.video}
-                controls
-                playsInline
-                className="w-full rounded-2xl mt-4"
+      {/* ================= 每日记录 ================= */}
+      <section className="mx-auto grid max-w-5xl gap-8">
+        {dailyRecords.map((item) => (
+          <div
+            key={item.date}
+            className="rounded-3xl bg-white p-8 shadow-sm"
+          >
+            {/* 日期 */}
+            <p className="opacity-60">
+              {item.date}
+            </p >
+            {/* 今日妆造 */}
+            <h2 className="mt-4 text-2xl font-bold">
+              ✨ 今日妆造
+            </h2>
+            {/* 图片 */}
+            {item.image && (
+              <img
+                src={item.image}
+                alt={item.date}
+                className="mt-6 w-full rounded-3xl"
               />
-
-              <h2 className="text-2xl font-bold mt-8">
-                📝 备注
-              </h2>
-
-              <p className="mt-4">
-                {item.dance.note}
+            )}
+            {/* ================= 记录信息 ================= */}
+            <div className="mt-8 space-y-4">
+              {/* 今日代表色 */}
+              <p>
+                🎨 今日代表色：
+                <span className="ml-2 font-bold">
+                  {item.color}
+                </span>
               </p >
-
+              {/* 穿搭关键词 */}
+              <p>
+                👗 穿搭关键词：
+                <span className="ml-2">
+                  {item.keywords}
+                </span>
+              </p >
+              {/* ================= 舞蹈记录 ================= */}
+              <p className="flex flex-wrap items-center">
+                <span>
+                  💃 舞蹈记录：
+                </span>
+                {item.dance?.video ? (
+                  <Link
+                    href={`/dance#dance-${item.date}`}
+                    className="ml-2 font-bold text-[#D9A900] transition hover:opacity-70 hover:underline"
+                  >
+                    {item.dance.name} →
+                  </Link>
+                ) : (
+                  <span className="ml-2 opacity-40">
+                    暂无舞蹈视频
+                  </span>
+                )}
+              </p >
+              {/* 小记 */}
+              <p>
+                📝 小记：
+                <span className="ml-2">
+                  {item.note}
+                </span>
+              </p >
             </div>
-
-          ))}
-
+          </div>
+        ))}
       </section>
-
     </main>
   );
 }
