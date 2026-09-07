@@ -1,80 +1,100 @@
-import Link from "next/link";
 import { dailyRecords } from "@/data/daily";
-export default function DailyPage() {
+
+export default async function DancePage({
+  searchParams,
+}: {
+  searchParams: Promise<{ date?: string }>;
+}) {
+  const params = await searchParams;
+
+  const selectedDate = params.date;
+
+  const selectedRecord = selectedDate
+    ? dailyRecords.find(
+        (item) =>
+          item.date.replace(/\./g, "-") === selectedDate
+      )
+    : null;
+
+  const recordsToShow = selectedRecord
+    ? [selectedRecord]
+    : dailyRecords.filter((item) => item.dance?.video);
+
   return (
     <main className="min-h-screen bg-[#FFF9EE] px-8 py-16 text-[#5A4636]">
-      {/* ================= 标题 ================= */}
+
+      {/* 标题 */}
       <h1 className="mb-12 text-center text-4xl font-bold tracking-widest">
-        🌻 每日记录
+        💃 舞蹈记录
       </h1>
-      {/* ================= 每日记录 ================= */}
-      <section className="mx-auto grid max-w-5xl gap-8">
-        {dailyRecords.map((item) => (
+
+      <section className="mx-auto max-w-4xl space-y-8">
+
+        {recordsToShow.map((item) => (
+
           <div
             key={item.date}
             className="rounded-3xl bg-white p-8 shadow-sm"
           >
+
             {/* 日期 */}
             <p className="opacity-60">
               {item.date}
             </p >
-            {/* 今日妆造 */}
+
+            {/* 舞蹈名称 */}
             <h2 className="mt-4 text-2xl font-bold">
-              ✨ 今日妆造
+              🎵 舞蹈名称
             </h2>
-            {/* 图片 */}
-            {item.image && (
-              <img
-                src={item.image}
-                alt={item.date}
-                className="mt-6 w-full rounded-3xl"
-              />
+
+            <p className="mt-4 text-lg font-medium">
+              {item.dance.name}
+            </p >
+
+            {/* 视频 */}
+            {item.dance.video && (
+              <>
+                <h2 className="mt-8 text-2xl font-bold">
+                  🎬 视频记录
+                </h2>
+
+                <video
+                  src={item.dance.video}
+                  controls
+                  playsInline
+                  className="mt-4 w-full rounded-2xl"
+                />
+              </>
             )}
-            {/* ================= 记录信息 ================= */}
-            <div className="mt-8 space-y-4">
-              {/* 今日代表色 */}
-              <p>
-                🎨 今日代表色：
-                <span className="ml-2 font-bold">
-                  {item.color}
-                </span>
-              </p >
-              {/* 穿搭关键词 */}
-              <p>
-                👗 穿搭关键词：
-                <span className="ml-2">
-                  {item.keywords}
-                </span>
-              </p >
-              {/* ================= 舞蹈记录 ================= */}
-              <p className="flex flex-wrap items-center">
-                <span>
-                  💃 舞蹈记录：
-                </span>
-                {item.dance?.video ? (
-                  <Link
-                    href={`/dance#dance-${item.date}`}
-                    className="ml-2 font-bold text-[#D9A900] transition hover:opacity-70 hover:underline"
-                  >
-                    {item.dance.name} →
-                  </Link>
-                ) : (
-                  <span className="ml-2 opacity-40">
-                    暂无舞蹈视频
-                  </span>
-                )}
-              </p >
-              {/* 小记 */}
-              <p>
-                📝 小记：
-                <span className="ml-2">
-                  {item.note}
-                </span>
-              </p >
-            </div>
+
+            {/* 备注 */}
+            {item.dance.note && (
+              <>
+                <h2 className="mt-8 text-2xl font-bold">
+                  📝 备注
+                </h2>
+
+                <p className="mt-4 opacity-70">
+                  {item.dance.note}
+                </p >
+              </>
+            )}
+
           </div>
+
         ))}
+
+        {/* 找不到记录 */}
+        {selectedDate && !selectedRecord && (
+          <div className="rounded-3xl bg-white p-8 text-center shadow-sm">
+            <p className="text-lg">
+              🌻 没有找到 {selectedDate.replace(/-/g, ".")} 的舞蹈记录
+            </p >
+          </div>
+        )}
+
       </section>
+
     </main>
   );
 }
