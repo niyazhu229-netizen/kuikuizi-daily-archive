@@ -1,22 +1,19 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 export const metadata: Metadata = {
   title: "KUIKUIZI Daily Archive",
   description: "记录葵葵子的每一天",
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,61 +25,47 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-
-        <nav className="bg-white px-3 md:px-8 py-5 flex justify-center gap-4 md:gap-8 shadow-sm">
-
-          <a
-            href=" "
+        <nav className="relative z-50 bg-white px-3 md:px-8 py-5 flex justify-center gap-4 md:gap-8 shadow-sm">
+          <Link
+            href="/"
             className="font-bold text-[#3F2D22] whitespace-nowrap"
           >
             首页
-          </a >
-
-          <a
+          </Link>
+          <Link
             href="/daily"
             className="font-bold text-[#3F2D22] whitespace-nowrap"
           >
             每日记录
-          </a >
-
-          <a
+          </Link>
+          <Link
             href="/dance"
             className="font-bold text-[#3F2D22] whitespace-nowrap"
           >
             舞蹈记录
-          </a >
-
-          <a
+          </Link>
+          <Link
             href="/colors"
             className="font-bold text-[#3F2D22] whitespace-nowrap"
           >
             色彩档案
-          </a >
-
+          </Link>
         </nav>
-
         {children}
-
         <footer className="mt-auto bg-[#FFF9EE] py-10 text-center text-[#5A4636]">
-
           <p className="font-bold text-lg">
             🌻 KUIKUIZI Daily Archive
           </p >
-
           <div className="mt-6 max-w-md mx-auto px-6">
-
             <p className="leading-relaxed">
               用心记录每一个关于葵葵子的瞬间，
               <br />
               收藏那些闪闪发光的日子。
             </p >
-
             <p className="mt-5 font-bold">
               —— NiyaraZ
             </p >
-
           </div>
-
           <p className="mt-8 text-xs opacity-50">
             Created by NiyaraZ
             <br />
@@ -90,9 +73,7 @@ export default function RootLayout({
             <br />
             © 2026 KUIKUIZI Daily Archive
           </p >
-
         </footer>
-
       </body>
     </html>
   );
