@@ -29,7 +29,7 @@ export const dailyRecords = [
 ,
   color: "墨茶棕"
 ,
-  colorCode: "#29241e"
+  colorCode: "#77644d"
 ,
   keywords: "冷艳 · 复古 · 灵动"
 ,
