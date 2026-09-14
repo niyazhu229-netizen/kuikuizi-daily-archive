@@ -1,4 +1,27 @@
 export const dailyRecords = [
+   {
+  date: "2026.09.09"
+,
+  image: "/photos/2026-09-09.jpg"
+,
+  color: "香芋紫白"
+,
+  colorCode: "#be6dde"
+,
+  keywords: "灵动 · 活力 · 精致"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-09-09.mp4"
+,
+    note: "完全福来！"
+  },
+
+  note: "好萌好萌好萌"
+},
   {
   date: "2026.09.07"
 ,
