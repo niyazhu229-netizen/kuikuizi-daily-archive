@@ -26,6 +26,7 @@ export default async function DailyDetailPage({
   }
   return (
     <main className="min-h-screen bg-[#FFF9EE] px-8 py-16 text-[#5A4636]">
+      {/* 页面标题 */}
       <h1 className="mb-12 text-center text-4xl font-bold tracking-widest">
         🌻 每日记录
       </h1>
@@ -80,7 +81,7 @@ export default async function DailyDetailPage({
           {/* 今日舞蹈 */}
           {item.dance?.video ? (
             <Link
-              href={`/dance?date=${item.date.replace(/\./g, "-")}`}
+              href={`/dance/${item.date.replace(/\./g, "-")}`}
               className="block rounded-2xl bg-[#FFF9EE] p-6 transition hover:shadow-md"
             >
               <p className="font-bold">
