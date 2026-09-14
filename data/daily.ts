@@ -1,5 +1,28 @@
 export const dailyRecords = [
   {
+  date: "2026.09.12"
+,
+  image: "/photos/2026-09-12.jpg"
+,
+  color: "高级灰"
+,
+  colorCode: "#3d3d3d"
+,
+  keywords: "端庄 · 知性 · 优雅"
+,
+
+  dance
+: {
+    name: "一点点"
+,
+    video: "/videos/2026-09-12.mp4"
+,
+    note: "老师这题我会"
+  },
+
+  note: "老师你的尺子呢"
+},
+  {
   date: "2026.09.11"
 ,
   image: "/photos/2026-09-11.jpg"
