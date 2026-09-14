@@ -1,5 +1,28 @@
 export const dailyRecords = [
   {
+  date: "2026.09.14"
+,
+  image: "/photos/2026-09-14.jpg"
+,
+  color: "甜酷粉"
+,
+  colorCode: "#ffc8db"
+,
+  keywords: "爱豆 · 元气 · 辣妹"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-09-14.mp4"
+,
+    note: "小偶像的打歌舞台"
+  },
+
+  note: "完全女团"
+},
+  {
   date: "2026.09.13"
 ,
   image: "/photos/2026-09-13.jpg"
