@@ -1,4 +1,50 @@
 export const dailyRecords = [
+  {
+  date: "2026.09.19"
+,
+  image: "/photos/2026-09-19.jpg"
+,
+  color: "藏蓝"
+,
+  colorCode: "#1a1a58"
+,
+  keywords: "冷艳 · 优雅 · 精致"
+,
+
+  dance
+: {
+    name: "一点点"
+,
+    video: "/videos/2026-09-19.mp4"
+,
+    note: "我妈妈"
+  },
+
+  note: "我是项链"
+},
+  {
+  date: "2026.09.17"
+,
+  image: "/photos/2026-09-17.jpg"
+,
+  color: "浅豆绿"
+,
+  colorCode: "#b7e7a6"
+,
+  keywords: "灵动 · 清雅 · 温婉"
+,
+
+  dance
+: {
+    name: "一点点"
+,
+    video: "/videos/2026-09-17.mp4"
+,
+    note: "师傅~我坚持不住啦"
+  },
+
+  note: "学功夫 练武术~"
+},
    {
   date: "2026.09.15"
 ,
