@@ -1,4 +1,27 @@
 export const dailyRecords = [
+   {
+  date: "2026.09.15"
+,
+  image: "/photos/2026-09-15.jpg"
+,
+  color: "复古红"
+,
+  colorCode: "#560f0f"
+,
+  keywords: "华贵 · 冷艳 · 重工"
+,
+
+  dance
+: {
+    name: "串烧"
+,
+    video: "/videos/2026-09-15.mp4"
+,
+    note: "完全老公TT"
+  },
+
+  note: "我老公"
+},
   {
   date: "2026.09.14"
 ,
