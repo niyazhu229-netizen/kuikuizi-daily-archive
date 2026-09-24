@@ -1,4 +1,27 @@
 export const dailyRecords = [
+  {
+  date: "2026.09.21"
+,
+  image: "/photos/2026-09-21.jpg"
+,
+  color: "奶白"
+,
+  colorCode: "#ffffff"
+,
+  keywords: "精致 · 梦幻 · 灵动"
+,
+
+  dance
+: {
+    name: "LOVE OPTIONS"
+,
+    video: "/videos/2026-09-21.mp4"
+,
+    note: "好美呀小葵葵"
+  },
+
+  note: "我家千金"
+},
    {
   date: "2026.09.20"
 ,
