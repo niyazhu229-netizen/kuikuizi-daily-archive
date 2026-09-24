@@ -1,5 +1,28 @@
 export const dailyRecords = [
    {
+  date: "2026.09.23"
+,
+  image: "/photos/2026-09-23.jpg"
+,
+  color: "经典黑"
+,
+  colorCode: "#000000"
+,
+  keywords: "冷艳 · 高级 · 魅惑"
+,
+
+  dance
+: {
+    name: "随机舞蹈"
+,
+    video: "/videos/2026-09-23.mp4"
+,
+    note: "欧尼~"
+  },
+
+  note: "女神降临"
+},
+   {
   date: "2026.09.22"
 ,
   image: "/photos/2026-09-22.jpg"
