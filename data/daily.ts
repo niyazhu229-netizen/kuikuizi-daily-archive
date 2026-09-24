@@ -1,4 +1,27 @@
 export const dailyRecords = [
+   {
+  date: "2026.09.22"
+,
+  image: "/photos/2026-09-22.jpg"
+,
+  color: "杏白"
+,
+  colorCode: "#ffd0e2"
+,
+  keywords: "甜美 · 梦幻 · 仙气"
+,
+
+  dance
+: {
+    name: "溯"
+,
+    video: "/videos/2026-09-22.mp4"
+,
+    note: "仙女"
+  },
+
+  note: "生日快乐！"
+},
   {
   date: "2026.09.21"
 ,
